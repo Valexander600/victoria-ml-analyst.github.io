@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +17,6 @@
       background-color: #121212;
       color: #f5f5f5;
       line-height: 1.6;
-      overflow-x: hidden;
     }
 
     header {
@@ -26,13 +24,11 @@
       color: white;
       padding: 4rem 2rem;
       text-align: center;
-      background-size: cover;
-      position: relative;
     }
 
     header h1 {
       font-size: 3.5rem;
-      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     }
 
     header p {
@@ -40,22 +36,8 @@
       margin-top: 1rem;
     }
 
-    .fade-in {
-      animation: fadeIn 2s ease-out;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
     nav {
-      background: #202020;
+      background: #1f1f1f;
       padding: 1rem;
       text-align: center;
     }
@@ -65,17 +47,22 @@
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      color: #f5f5f5;
+      color: #ffffff;
     }
 
     section {
       padding: 3rem 2rem;
       max-width: 1000px;
       margin: auto;
+    }
+
+    h2 {
+      color: #99f2c8;
+      margin-bottom: 1rem;
     }
 
     .projects {
@@ -89,7 +76,7 @@
       border-radius: 10px;
       padding: 1.5rem;
       box-shadow: 0 4px 10px rgba(0, 255, 170, 0.2);
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .project:hover {
@@ -98,23 +85,21 @@
     }
 
     .project img {
-      max-width: 100%;
+      width: 100%;
       border-radius: 8px;
       margin-bottom: 1rem;
     }
 
     .project h3 {
-      font-size: 1.5rem;
       color: #99f2c8;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     footer {
       background-color: #101010;
       color: #bbb;
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
+      padding: 2rem 1rem;
     }
 
     footer a {
@@ -123,15 +108,15 @@
     }
 
     footer a:hover {
-      color: #f5f5f5;
+      color: #ffffff;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1 class="fade-in">Victoria Alexander</h1>
-    <p class="fade-in">Data Analysis & Machine Learning with Python | Creative, Insight-Driven Solutions</p>
+    <h1>Victoria Alexander</h1>
+    <p>Data Analysis & Machine Learning with Python | Creative, Insight-Driven Solutions</p>
   </header>
 
   <nav>
@@ -151,7 +136,7 @@
     <h2>Projects</h2>
     <div class="projects">
       <div class="project">
-        <img src="https://via.placeholder.com/300x180?text=Credit+Card+Fraud+Detection" alt="Credit Card Fraud">
+        <img src="https://via.placeholder.com/300x180?text=Fraud+Detection+Model" alt="Credit Card Fraud Detection">
         <h3>Credit Card Fraud Detection</h3>
         <p>Built a machine learning model to identify fraudulent transactions with high accuracy using Python and scikit-learn.</p>
         <a href="https://github.com/Valexander600/credit-card-fraud-ml" target="_blank">View Project</a>
@@ -159,7 +144,7 @@
 
       <div class="project">
         <img src="https://via.placeholder.com/300x180?text=Mental+Health+Analysis" alt="Mental Health Analysis">
-        <h3>Mental Health & Tech Industry</h3>
+        <h3>Mental Health in Tech</h3>
         <p>Analyzed survey data using Python and visualization libraries to understand mental health trends in the tech workplace.</p>
         <a href="https://github.com/Valexander600/mental-health-tech-analysis" target="_blank">View Project</a>
       </div>
@@ -167,7 +152,7 @@
       <div class="project">
         <img src="https://via.placeholder.com/300x180?text=Excel+Dashboard" alt="Excel Dashboard">
         <h3>Excel Dashboard Project</h3>
-        <p>Created a fully interactive Excel dashboard for sales and marketing data with pivot tables and slicers.</p>
+        <p>Created a fully interactive Excel dashboard for sales and marketing data using pivot tables, charts, and slicers.</p>
         <a href="https://github.com/Valexander600/excel-data-project" target="_blank">View Project</a>
       </div>
     </div>
@@ -183,5 +168,5 @@
     <p>Visit my <a href="https://github.com/Valexander600" target="_blank">GitHub</a> to explore more.</p>
   </footer>
 </body>
-
 </html>
+
