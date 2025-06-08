@@ -3,50 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victoria Alexander | Data Analyst & ML Enthusiast</title>
+  <title>Victoria Alexander | Data & ML Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: #f1f5f9;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
       line-height: 1.6;
     }
+
     header {
-      background: #1e293b;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    .cta {
-      background: #3b82f6;
+      background: linear-gradient(135deg, #1f4037, #99f2c8);
       color: white;
-      padding: 10px 20px;
-      border: none;
-      margin-top: 20px;
-      font-size: 1rem;
-      cursor: pointer;
-      display: inline-block;
-      text-decoration: none;
+      padding: 4rem 2rem;
+      text-align: center;
     }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    nav {
+      background: #202020;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #99f2c8;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     section {
-      padding: 40px 20px;
-      max-width: 800px;
+      padding: 3rem 2rem;
+      max-width: 1000px;
       margin: auto;
     }
-    h2 {
-      border-bottom: 2px solid #334155;
-      padding-bottom: 10px;
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
     }
-    .projects a {
-      color: #38bdf8;
+
+    .project {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 255, 170, 0.2);
+      transition: transform 0.3s;
     }
-    .footer {
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #101010;
+      color: #bbb;
       text-align: center;
-      padding: 20px;
-      background: #1e293b;
+      padding: 2rem;
       font-size: 0.9rem;
     }
   </style>
@@ -54,45 +90,56 @@
 <body>
   <header>
     <h1>Victoria Alexander</h1>
-    <p>Data Analyst & ML Enthusiast — turning real-world data into real-world impact</p>
-    <a class="cta" href="#projects">View My Work</a>
+    <p>Data Analysis & Machine Learning with Python | Creative, Insight-Driven Solutions</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>I’m a data analyst and aspiring machine learning practitioner. I love making sense of messy data and designing intuitive, visual solutions. My toolkit includes Python, SQL, Excel, and libraries like Pandas, Seaborn, and Matplotlib — and I’m currently diving deeper into Streamlit and model deployment.</p>
+    <p>
+      I’m a tech-savvy problem solver passionate about using Python and machine learning to uncover insights and tell meaningful stories through data. From Jupyter notebooks to Excel dashboards, I love turning complex data into clear, actionable visuals.
+    </p>
   </section>
 
   <section id="projects">
-    <h2>Featured Projects</h2>
+    <h2>Projects</h2>
     <div class="projects">
-      <p><strong>Mental Health in Tech</strong><br>
-      Exploratory data analysis on mental health and workplace factors using Python and Seaborn.<br>
-      <a href="https://github.com/Valexander600/mental-health-tech-analysis" target="_blank">View on GitHub →</a></p>
+      <div class="project">
+        <img src="https://via.placeholder.com/300x180?text=Credit+Card+Fraud" alt="Credit Card Fraud">
+        <h3>Credit Card Fraud Detection</h3>
+        <p>Built a machine learning model to identify fraudulent transactions with high accuracy using Python and scikit-learn.</p>
+        <a href="https://github.com/Valexander600/credit-card-fraud-ml" target="_blank">View Project</a>
+      </div>
 
-      <p><strong>Credit Card Fraud Detection</strong><br>
-      Built an ML pipeline to detect fraud with 94% precision. Used scikit-learn, pandas, and logistic regression.<br>
-      <a href="https://github.com/Valexander600/credit-card-fraud-ml" target="_blank">View on GitHub →</a></p>
+      <div class="project">
+        <img src="https://via.placeholder.com/300x180?text=Mental+Health+Tech" alt="Mental Health Analysis">
+        <h3>Mental Health & Tech Industry</h3>
+        <p>Analyzed survey data using Python and visualization libraries to understand mental health trends in the tech workplace.</p>
+        <a href="https://github.com/Valexander600/mental-health-tech-analysis" target="_blank">View Project</a>
+      </div>
 
-      <p><strong>Excel Data Dashboard</strong><br>
-      Created a dynamic Excel dashboard with pivot tables, charts, and conditional formatting for reporting.<br>
-      <a href="https://github.com/Valexander600/excel-dashboard" target="_blank">View on GitHub →</a></p>
+      <div class="project">
+        <img src="https://via.placeholder.com/300x180?text=Excel+Analysis" alt="Excel Analysis">
+        <h3>Excel Dashboard Project</h3>
+        <p>Created a fully interactive Excel dashboard for sales and marketing data with pivot tables and slicers.</p>
+        <a href="https://github.com/Valexander600/excel-data-project" target="_blank">View Project</a>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>Technical Skills</h2>
-    <p>Python · SQL · Excel · Pandas · Seaborn · Matplotlib · Streamlit · Data Cleaning · Visualization · Machine Learning · Regression · Dashboarding</p>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let's connect! Reach out via <a href="mailto:your-email@example.com">email</a> or <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">LinkedIn</a>.</p>
   </section>
 
-  <section>
-    <h2>Let’s Connect</h2>
-    <p>I’m open to data-focused opportunities and collaborations. <br>
-    <a href="https://www.linkedin.com/in/victoria-ml-analyst/" target="_blank" style="color:#38bdf8;">Connect with me on LinkedIn →</a></p>
-  </section>
-
-  <footer class="footer">
-    © 2025 Victoria Alexander · Built with 💙 and Python energy
+  <footer>
+    <p>&copy; 2025 Victoria Alexander. Built with love, Python & curiosity.</p>
   </footer>
 </body>
 </html>
+
