@@ -1,19 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Victoria – ML & Data Portfolio</title>
-</head>
-<body>
-  <h1>Hi, I'm Victoria 👋</h1>
-  <p>Data Analyst & Aspiring ML Practitioner</p>
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin } from "lucide-react";
+import Image from "next/image";
 
-  <h2>Featured Projects</h2>
-  <ul>
-    <li><a href="https://github.com/Valexander600/mental-health-tech-analysis">🧠 Mental Health in Tech Analysis</a></li>
-    <li><a href="https://github.com/Valexander600/credit-card-fraud-detection">💳 Credit Card Fraud Detection</a></li>
-  </ul>
+export default function Portfolio() {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-white to-sky-100 text-gray-800 font-sans">
+      {/* Hero Section */}
+      <section className="w-full py-20 px-6 text-center bg-sky-700 text-white">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Victoria Alexander</h1>
+        <p className="text-xl md:text-2xl mb-6">
+          Data Analyst & ML Enthusiast — turning real-world data into real-world impact
+        </p>
+        <Button className="text-lg px-6 py-3 bg-white text-sky-700 font-semibold hover:bg-sky-100">
+          View My Work
+        </Button>
+      </section>
 
-  <p>📫 <a href="https://www.linkedin.com/in/victoria-ml-analyst/">Connect on LinkedIn</a></p>
-</body>
-</html>
+      {/* About Section */}
+      <section className="px-6 py-16 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-semibold mb-4">About Me</h2>
+        <p className="text-lg">
+          I’m a data analyst and aspiring machine learning practitioner. I love making sense of messy data and designing
+          intuitive, visual solutions. My toolkit includes Python, SQL, Excel, and libraries like Pandas, Seaborn, and
+          Matplotlib — and I’m currently diving deeper into Streamlit and model deployment.
+        </p>
+      </section>
+
+      {/* Projects Section */}
+      <section className="px-6 py-16 bg-white">
+        <h2 className="text-3xl font-semibold text-center mb-10">Featured Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {[
+            {
+              title: "Mental Health in Tech",
+              desc: "Exploratory data analysis on mental health and workplace factors using Python and Seaborn.",
+              link: "https://github.com/Valexander600/mental-health-tech-analysis",
+            },
+            {
+              title: "Credit Card Fraud Detection",
+              desc: "Built an ML pipeline to detect fraud with 94% precision. Used scikit-learn, pandas, and logistic regression.",
+              link: "https://github.com/Valexander600/credit-card-fraud-ml",
+            },
+            {
+              title: "Excel Data Dashboard",
+              desc: "Created a dynamic Excel dashboard with pivot tables, charts, and conditional formatting for reporting.",
+              link: "https://github.com/Valexander600/excel-dashboard",
+            },
+          ].map((project) => (
+            <Card key={project.title} className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <p className="text-sm mb-4 text-gray-700">{project.desc}</p>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  className="text-sky-700 font-medium hover:underline"
+                >
+                  View on GitHub →
+                </a>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="px-6 py-16 bg-sky-50">
+        <h2 className="text-3xl font-semibold text-center mb-6">Technical Skills</h2>
+        <p className="text-center text-lg max-w-3xl mx-auto">
+          Python · SQL · Excel · Pandas · Seaborn · Matplotlib · Streamlit · Data Cleaning · Visualization · Machine Learning · Regression · Dashboarding
+        </p>
+      </section>
+
+      {/* Contact Section */}
+      <section className="px-6 py-16 bg-white text-center">
+        <h2 className="text-3xl font-semibold mb-4">Let’s Connect</h2>
+        <p className="mb-4">I'm open to data-focused opportunities and collaborations.</p>
+        <div className="flex justify-center gap-6">
+          <a href="https://github.com/Valexander600" target="_blank">
+            <Github className="h-6 w-6" />
+          </a>
+          <a href="https://www.linkedin.com/in/victoria-ml-analyst/" target="_blank">
+            <Linkedin className="h-6 w-6" />
+          </a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center py-6 text-sm text-gray-500">
+        © 2025 Victoria Alexander · Built with 💙 and Python energy
+      </footer>
+    </main>
+  );
+}
+
