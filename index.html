@@ -3,185 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victoria Alexander | Data & ML Analyst</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Victoria Alexander | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-
     body {
-      background-color: #101820;
-      color: #f5f5f5;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #1e2a38; /* lighter navy */
+      color: #f4f4f4;
     }
-
     header {
-      background: url('https://via.placeholder.com/1500x800.png?text=Machine+Learning+Data+Analysis') no-repeat center center/cover;
-      color: white;
-      padding: 4rem 2rem;
       text-align: center;
+      padding: 3rem 1rem 2rem;
     }
-
-    header h1 {
-      font-size: 3.5rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
-
     nav {
-      background: #1f1f2e;
-      padding: 1rem;
       text-align: center;
+      background-color: #2c3644;
+      padding: 1rem;
     }
-
     nav a {
-      color: #72e3f0;
       margin: 0 1rem;
       text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
+      color: #64d6d6;
+      font-weight: 600;
     }
-
-    nav a:hover {
-      color: #ffffff;
-    }
-
     section {
-      padding: 3rem 2rem;
+      padding: 2rem 1.5rem;
       max-width: 1000px;
       margin: auto;
     }
-
-    h2 {
-      color: #a4d8ff;
-      margin-bottom: 1rem;
-    }
-
-    .projects {
+    .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
     }
-
-    .project {
-      background-color: #1e1e2f;
+    .card {
+      background-color: #273443;
       border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 10px rgba(114, 227, 240, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 15px rgba(114, 227, 240, 0.3);
-    }
-
-    .project img {
+    .card img {
       width: 100%;
-      border-radius: 8px;
-      margin-bottom: 1rem;
+      border-radius: 6px;
     }
-
-    .project h3 {
-      color: #72e3f0;
-      margin-bottom: 0.5rem;
+    .card h3 {
+      color: #64d6d6;
+      margin-top: 1rem;
     }
-
-    .profile {
-      text-align: center;
+    .card a {
+      color: #a0a0ff;
+      text-decoration: underline;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #64d6d6;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-info {
       margin-top: 2rem;
     }
-
-    .profile img {
-      width: 140px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      border: 3px solid #72e3f0;
-    }
-
-    footer {
-      background-color: #080808;
-      color: #bbb;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    footer a {
-      color: #72e3f0;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #ffffff;
+    .emoji {
+      margin-right: 6px;
     }
   </style>
 </head>
-
 <body>
   <header>
     <h1>Victoria Alexander</h1>
     <p>Data Analysis & Machine Learning with Python | Creative, Insight-Driven Solutions</p>
   </header>
-
+  
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section class="profile">
-    <img src="profile.jpg" alt="Victoria Alexander">
-  </section>
-
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      I’m a tech-savvy problem solver passionate about using Python and machine learning to uncover insights and tell meaningful stories through data. From Jupyter notebooks to Excel dashboards, I love turning complex data into clear, actionable visuals.
-    </p>
+    <p>I'm a tech-savvy problem solver passionate about using Python and machine learning to uncover insights and tell meaningful stories through data. From Jupyter notebooks to Excel dashboards, I love turning complex data into clear, actionable visuals.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3R2bWg4NjdjNWdrcDVlb2V0N2tlYmgyZDRpN2k4YmNyeTMwcmR2ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JU4Kds6u1kYtG/giphy.gif" alt="Credit Card Fraud Detection">
+    <div class="project-grid">
+      <div class="card">
+        <img src="https://media.giphy.com/media/26tPoyDhjiJ2g7rEs/giphy.gif" alt="Fraud Detection GIF">
         <h3>Credit Card Fraud Detection</h3>
         <p>Built a machine learning model to identify fraudulent transactions with high accuracy using Python and scikit-learn.</p>
-        <a href="https://github.com/Valexander600/credit-card-fraud-ml" target="_blank">View Project</a>
+        <a href="https://github.com/Valexander600/credit-card-fraud-detection">View Project</a>
       </div>
-
-      <div class="project">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXEzMzh6enl0djF1eDV2aHdmZnBnMWRzNGxtb2gyM2NxbnZzNnQyZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Mental Health Analysis">
+      <div class="card">
+        <img src="https://media.giphy.com/media/fAnEC88LccN7a/giphy.gif" alt="Mental Health in Tech">
         <h3>Mental Health in Tech</h3>
         <p>Analyzed survey data using Python and visualization libraries to understand mental health trends in the tech workplace.</p>
-        <a href="https://github.com/Valexander600/mental-health-tech-analysis" target="_blank">View Project</a>
+        <a href="https://github.com/Valexander600/mental-health-tech-analysis">View Project</a>
       </div>
-
-      <div class="project">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWM2ZG0xd2Y3ZHN3NGlkcmZqNzFvdG5yc2M3ZHMzcmI2bXUxdG9qayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0MYKDrp7HzNn5iqw/giphy.gif" alt="Excel Dashboard">
+      <div class="card">
+        <img src="https://media.giphy.com/media/3o7qE1YN7aBOFPRw8E/giphy.gif" alt="Excel Dashboard">
         <h3>Excel Dashboard Project</h3>
         <p>Created a fully interactive Excel dashboard for sales and marketing data using pivot tables, charts, and slicers.</p>
-        <a href="https://github.com/Valexander600/excel-data-project" target="_blank">View Project</a>
+        <a href="https://github.com/Valexander600/excel-dashboard">View Project</a>
       </div>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Let's connect! Reach out via <a href="mailto:valexander600@gmail.com">valexander600@gmail.com</a> or <a href="https://www.linkedin.com/in/victoria-ml-analyst/" target="_blank">LinkedIn</a>.</p>
-  </section>
+    <form action="https://formspree.io/f/xleqonrq" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
-  <footer>
-    <p>&copy; 2025 Victoria Alexander. Built with love, Python & curiosity.</p>
-    <p>Visit my <a href="https://github.com/Valexander600" target="_blank">GitHub</a> to explore more.</p>
-  </footer>
+    <div class="contact-info">
+      <p><span class="emoji">✉️</span> <a href="mailto:valexander600@gmail.com">valexander600@gmail.com</a></p>
+      <p><span class="emoji">💼</span> <a href="https://www.linkedin.com/in/victoria-ml-analyst/" target="_blank">LinkedIn</a></p>
+    </div>
+  </section>
 </body>
 </html>
+
