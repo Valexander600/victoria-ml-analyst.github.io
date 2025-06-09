@@ -1,153 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victoria Alexander | Data Analyst</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Victoria Alexander | Data Analyst & ML Enthusiast</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f6f8fa;
-      color: #1a1a1a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #222;
     }
+
     header {
+      position: relative;
+      background-image: url('https://i.ytimg.com/vi/w-HJ17gN-mY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAoomTpy8g66_GVo0PdGGLwbnaa5A');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 2rem 1rem;
-      background-color: #ffffff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      color: white;
     }
-    h1 {
-      font-size: 2.8rem;
-      margin: 0.5rem 0;
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
     }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    header p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.2rem;
+    }
+
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
+      background-color: #ffffff;
       padding: 1rem;
-      background-color: #e4e9f0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     nav a {
-      color: #005580;
       text-decoration: none;
-      font-weight: 600;
+      color: #0077b6;
+      font-weight: bold;
     }
+
     section {
-      padding: 2rem 1.5rem;
       max-width: 900px;
-      margin: auto;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
+
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
+      gap: 1.5rem;
     }
+
     .project-card {
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 1rem;
-      transition: transform 0.3s ease;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
+
     .project-card img {
       width: 100%;
-      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
     }
-    .project-title {
-      font-size: 1.25rem;
-      margin-top: 1rem;
-      color: #005580;
-      font-weight: bold;
+
+    .project-card .text {
+      padding: 1rem;
     }
-    footer {
-      background-color: #e4e9f0;
-      padding: 2rem 1rem;
-      text-align: center;
-      font-size: 1rem;
-    }
-    .contact-info a {
-      color: #005580;
-      text-decoration: none;
-      display: block;
-      margin: 0.5rem 0;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    .contact-form button {
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 8px;
-      background-color: #005580;
-      color: #fff;
-      font-size: 1rem;
-      cursor: pointer;
+
+    .contact-info {
+      font-size: 1.1rem;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Victoria Alexander</h1>
-    <p>Data Analysis & Machine Learning with Python | Creative, Insight-Driven Solutions</p>
+    <div>
+      <h1>Victoria Alexander</h1>
+      <p>Data Analysis & Machine Learning with Python | Creative, Insight-Driven Solutions</p>
+    </div>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <section id="about">
     <h2>About Me</h2>
     <p>I’m a tech-savvy problem solver passionate about using Python and machine learning to uncover insights and tell meaningful stories through data. From Jupyter notebooks to Excel dashboards, I love turning complex data into clear, actionable visuals.</p>
   </section>
+
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects">
       <div class="project-card">
         <img src="https://images.ctfassets.net/kqru4vgwujx6/5cVIMG80v3Ut87dFDbyfOM/8d082ae72237a018b21b01014008cb7b/The_Different_Types_of_Payment_Fraud-_What_You_Need_to_Know_2__1_.gif?w=800&q=90" alt="Credit Card Fraud Detection GIF">
-        <div class="project-title">Credit Card Fraud Detection</div>
-        <p>Built a machine learning model to identify fraudulent transactions with high accuracy using Python and scikit-learn.</p>
-        <a href="https://github.com/Valexander600/credit-card-fraud-ml" target="_blank">View Project</a>
+        <div class="text">
+          <h3>💳 Credit Card Fraud Detection</h3>
+          <p>Built a machine learning model to identify fraudulent transactions with high accuracy using Python and scikit-learn.</p>
+          <a href="https://github.com/Valexander600/credit-card-fraud-detection">View Project</a>
+        </div>
       </div>
+
       <div class="project-card">
         <img src="https://i.pinimg.com/originals/ed/ae/c0/edaec0653a394878f2574eb0223020fe.gif" alt="Mental Health in Tech GIF">
-        <div class="project-title">Mental Health in Tech</div>
-        <p>Analyzed survey data using Python and visualization libraries to understand mental health trends in the tech workplace.</p>
-        <a href="https://github.com/Valexander600/mental-health-tech-analysis" target="_blank">View Project</a>
+        <div class="text">
+          <h3>🧠 Mental Health in Tech</h3>
+          <p>Analyzed survey data using Python and visualization libraries to understand mental health trends in the tech workplace.</p>
+          <a href="https://github.com/Valexander600/mental-health-tech-analysis">View Project</a>
+        </div>
       </div>
+
       <div class="project-card">
         <img src="https://www.learnexcelnow.com/wp-content/uploads/2016/10/Show-Formulas-Gif.gif" alt="Excel Dashboard GIF">
-        <div class="project-title">Excel Dashboard Project</div>
-        <p>Created a fully interactive Excel dashboard for sales and marketing data using pivot tables, charts, and slicers.</p>
-        <a href="https://github.com/Valexander600/excel-dashboard" target="_blank">View Project</a>
+        <div class="text">
+          <h3>📊 Excel Dashboard Project</h3>
+          <p>Created a fully interactive Excel dashboard for sales and marketing data using pivot tables, charts, and slicers.</p>
+          <a href="https://github.com/Valexander600/excel-dashboard">View Project</a>
+        </div>
       </div>
     </div>
   </section>
+
   <section id="contact">
     <h2>Contact</h2>
-    <div class="contact-info">
-      <p>📧 <a href="mailto:valexander600@gmail.com">valexander600@gmail.com</a></p>
-      <p>💼 <a href="https://www.linkedin.com/in/victoria-ml-analyst/" target="_blank">LinkedIn</a></p>
-    </div>
-    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+    <p class="contact-info">
+      📧 <a href="mailto:valexander600@gmail.com">valexander600@gmail.com</a><br />
+      💼 <a href="https://www.linkedin.com/in/victoria-ml-analyst/" target="_blank">LinkedIn Profile</a>
+    </p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label>
+        Your Name:<br />
+        <input type="text" name="name" required />
+      </label><br />
+      <label>
+        Your Email:<br />
+        <input type="email" name="email" required />
+      </label><br />
+      <label>
+        Your Message:<br />
+        <textarea name="message" required></textarea>
+      </label><br />
+      <button type="submit">Send</button>
     </form>
   </section>
-  <footer>
-    <p>&copy; 2025 Victoria Alexander</p>
-  </footer>
 </body>
-</html>
 
+</html>
