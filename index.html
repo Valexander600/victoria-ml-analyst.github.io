@@ -14,7 +14,7 @@
       line-height: 1.6;
     }
     header {
-      background: url('https://thumbs.dreamstime.com/b/cartoon-home-room-personal-workspace-computer-table-chair-night-extreme-closeup-generative-ai-281511499.jpg') no-repeat center center/cover;
+      background: url('https://i.pinimg.com/originals/7d/07/a2/7d07a255678962d30d8717dcf5dbd266.gif') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 6rem 1rem;
@@ -43,6 +43,9 @@
       max-width: 900px;
       margin: auto;
     }
+    .project {
+      margin-bottom: 2rem;
+    }
     .project img {
       max-width: 100%;
       height: auto;
@@ -51,6 +54,13 @@
     .project h3:hover {
       color: #0366d6;
       cursor: pointer;
+    }
+    .project-details {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
     }
     form label {
       display: block;
@@ -104,18 +114,31 @@
 
   <section id="projects">
     <h2>Projects</h2>
+
     <div class="project">
       <h3>🧠 Mental Health in Tech</h3>
       <img src="https://i.pinimg.com/originals/ed/ae/c0/edaec0653a394878f2574eb0223020fe.gif" alt="Mental health gif">
+      <div class="project-details">
+        <p>This project explores the impact of workplace conditions on mental health in the tech industry. Data cleaning, analysis, and visualizations were performed using Python (Pandas, Matplotlib, Seaborn).</p>
+      </div>
     </div>
+
     <div class="project">
       <h3>💳 Credit Card Fraud Detection</h3>
       <img src="https://images.ctfassets.net/kqru4vgwujx6/5cVIMG80v3Ut87dFDbyfOM/8d082ae72237a018b21b01014008cb7b/The_Different_Types_of_Payment_Fraud-_What_You_Need_to_Know_2__1_.gif?w=800&q=90" alt="Fraud detection gif">
+      <div class="project-details">
+        <p>This machine learning project uses Python (Scikit-Learn) to detect fraudulent transactions. Techniques include data balancing, feature engineering, and classification model evaluation.</p>
+      </div>
     </div>
+
     <div class="project">
       <h3>📊 Excel Analysis</h3>
       <img src="https://www.learnexcelnow.com/wp-content/uploads/2016/10/Show-Formulas-Gif.gif" alt="Excel gif">
+      <div class="project-details">
+        <p>This project demonstrates business analysis using Excel, including PivotTables, VLOOKUP, and formula-driven dashboards for decision-making support.</p>
+      </div>
     </div>
+
   </section>
 
   <section id="contact">
