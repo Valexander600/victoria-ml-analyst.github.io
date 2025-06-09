@@ -1,225 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victoria Alexander | Data Analyst & ML Enthusiast</title>
+  <title>Victoria Alexander • Data Analyst</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" type="image/png">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f7fa;
-      color: #222;
+      background-color: #f5f8fb;
+      color: #333;
+      line-height: 1.6;
     }
-
     header {
-      position: relative;
-      background-image: url('https://thumbs.dreamstime.com/b/cartoon-home-room-personal-workspace-computer-table-chair-night-extreme-closeup-generative-ai-281511499.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      background: url('https://thumbs.dreamstime.com/b/cartoon-home-room-personal-workspace-computer-table-chair-night-extreme-closeup-generative-ai-281511499.jpg') no-repeat center center/cover;
       color: white;
+      text-align: center;
+      padding: 6rem 1rem;
     }
-
-    header::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 0;
-    }
-
-    header h1,
-    header p {
-      position: relative;
-      z-index: 1;
-    }
-
     header h1 {
-      font-size: 3rem;
-      margin: 0;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 3px #000;
     }
-
     header p {
       font-size: 1.2rem;
+      text-shadow: 1px 1px 2px #000;
     }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background-color: #ffffff;
-      padding: 1rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
     nav a {
+      margin: 0 1rem;
       text-decoration: none;
-      color: #0077b6;
-      font-weight: bold;
+      color: #0366d6;
       transition: color 0.3s ease;
     }
-
     nav a:hover {
-      color: #023e8a;
+      color: #023c7a;
+      text-decoration: underline;
     }
-
     section {
+      padding: 2rem 1rem;
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: auto;
     }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
+    .project img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
-
-    .project-card {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
+    .project h3:hover {
+      color: #0366d6;
+      cursor: pointer;
     }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .project-card .text {
-      padding: 1rem;
-    }
-
-    .project-card a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #0077b6;
-      text-decoration: none;
+    form label {
+      display: block;
+      margin-top: 1rem;
       font-weight: bold;
-      transition: color 0.3s ease;
     }
-
-    .project-card a:hover {
-      color: #023e8a;
-    }
-
-    .contact-info {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-    }
-
-    form input,
-    form textarea {
+    form input, form textarea {
       width: 100%;
       padding: 0.5rem;
-      margin-bottom: 1rem;
+      margin-top: 0.5rem;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 4px;
     }
-
     form button {
-      background-color: #0077b6;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background-color: #0366d6;
       color: white;
       border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
+      border-radius: 4px;
       cursor: pointer;
-      transition: background 0.3s ease;
     }
-
     form button:hover {
-      background-color: #023e8a;
+      background-color: #024b9c;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      section {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
-
 <body>
   <header>
-    <div>
-      <h1>Victoria Alexander</h1>
-      <p>Combining creativity with code 💡💻</p>
-    </div>
+    <h1>Victoria Alexander</h1>
+    <p>Data Analyst • Python & ML Enthusiast</p>
   </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m a tech-savvy problem solver passionate about using Python and machine learning to uncover insights and tell meaningful stories through data. From Jupyter notebooks to Excel dashboards, I love turning complex data into clear, actionable visuals.</p>
+    <p>Hi! I'm Victoria, a passionate data analyst with a love for Python, machine learning, and visual storytelling with data.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <img src="https://images.ctfassets.net/kqru4vgwujx6/5cVIMG80v3Ut87dFDbyfOM/8d082ae72237a018b21b01014008cb7b/The_Different_Types_of_Payment_Fraud-_What_You_Need_to_Know_2__1_.gif?w=800&q=90" alt="Credit Card Fraud Detection GIF">
-        <div class="text">
-          <h3>💳 Credit Card Fraud Detection</h3>
-          <p>Built a machine learning model to identify fraudulent transactions with high accuracy using Python and scikit-learn.</p>
-          <a href="https://github.com/Valexander600/credit-card-fraud-detection">View Project</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="https://i.pinimg.com/originals/ed/ae/c0/edaec0653a394878f2574eb0223020fe.gif" alt="Mental Health in Tech GIF">
-        <div class="text">
-          <h3>🧠 Mental Health in Tech</h3>
-          <p>Analyzed survey data using Python and visualization libraries to understand mental health trends in the tech workplace.</p>
-          <a href="https://github.com/Valexander600/mental-health-tech-analysis">View Project</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="https://www.learnexcelnow.com/wp-content/uploads/2016/10/Show-Formulas-Gif.gif" alt="Excel Dashboard GIF">
-        <div class="text">
-          <h3>📊 Excel Dashboard Project</h3>
-          <p>Created a fully interactive Excel dashboard for sales and marketing data using pivot tables, charts, and slicers.</p>
-          <a href="https://github.com/Valexander600/excel-dashboard">View Project</a>
-        </div>
-      </div>
+    <div class="project">
+      <h3>🧠 Mental Health in Tech</h3>
+      <img src="https://i.pinimg.com/originals/ed/ae/c0/edaec0653a394878f2574eb0223020fe.gif" alt="Mental health gif">
+    </div>
+    <div class="project">
+      <h3>💳 Credit Card Fraud Detection</h3>
+      <img src="https://images.ctfassets.net/kqru4vgwujx6/5cVIMG80v3Ut87dFDbyfOM/8d082ae72237a018b21b01014008cb7b/The_Different_Types_of_Payment_Fraud-_What_You_Need_to_Know_2__1_.gif?w=800&q=90" alt="Fraud detection gif">
+    </div>
+    <div class="project">
+      <h3>📊 Excel Analysis</h3>
+      <img src="https://www.learnexcelnow.com/wp-content/uploads/2016/10/Show-Formulas-Gif.gif" alt="Excel gif">
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p class="contact-info">
-      📧 <a href="mailto:valexander600@gmail.com">valexander600@gmail.com</a><br />
-      💼 <a href="https://www.linkedin.com/in/victoria-ml-analyst/" target="_blank">LinkedIn Profile</a>
-    </p>
+    <h2>Contact Me</h2>
+    <p>📧 <a href="mailto:valexander600@gmail.com">valexander600@gmail.com</a></p>
+    <p>💼 <a href="https://www.linkedin.com/in/victoria-ml-analyst/" target="_blank">LinkedIn</a></p>
+
     <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label>Your Name:</label>
-      <input type="text" name="name" required />
-      <label>Your Email:</label>
-      <input type="email" name="email" required />
-      <label>Your Message:</label>
-      <textarea name="message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
     </form>
+    <p id="thankYouMessage" style="display:none;color:green;">Thank you! I'll get back to you soon.</p>
   </section>
 
-  <footer style="text-align: center; padding: 1rem; margin-top: 2rem; color: #777;">
-    © 2025 Victoria Alexander · Built with Python & passion
+  <footer>
+    <p>&copy; 2025 Victoria Alexander</p>
   </footer>
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      setTimeout(() => {
+        document.getElementById('thankYouMessage').style.display = 'block';
+      }, 100);
+    });
+  </script>
 </body>
-
 </html>
