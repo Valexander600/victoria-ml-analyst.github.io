@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Victoria Alexander | Data Analyst & ML Enthusiast</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
@@ -38,16 +37,18 @@
       z-index: 0;
     }
 
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
+    header h1,
+    header p {
       position: relative;
       z-index: 1;
     }
 
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
     header p {
-      position: relative;
-      z-index: 1;
       font-size: 1.2rem;
     }
 
@@ -64,6 +65,11 @@
       text-decoration: none;
       color: #0077b6;
       font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #023e8a;
     }
 
     section {
@@ -75,14 +81,19 @@
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
+      gap: 2rem;
     }
 
     .project-card {
       background: white;
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
     }
 
     .project-card img {
@@ -95,8 +106,45 @@
       padding: 1rem;
     }
 
+    .project-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .project-card a:hover {
+      color: #023e8a;
+    }
+
     .contact-info {
       font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #023e8a;
     }
   </style>
 </head>
@@ -159,22 +207,19 @@
       💼 <a href="https://www.linkedin.com/in/victoria-ml-analyst/" target="_blank">LinkedIn Profile</a>
     </p>
     <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label>
-        Your Name:<br />
-        <input type="text" name="name" required />
-      </label><br />
-      <label>
-        Your Email:<br />
-        <input type="email" name="email" required />
-      </label><br />
-      <label>
-        Your Message:<br />
-        <textarea name="message" required></textarea>
-      </label><br />
-      <button type="submit">Send</button>
+      <label>Your Name:</label>
+      <input type="text" name="name" required />
+      <label>Your Email:</label>
+      <input type="email" name="email" required />
+      <label>Your Message:</label>
+      <textarea name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
+
+  <footer style="text-align: center; padding: 1rem; margin-top: 2rem; color: #777;">
+    © 2025 Victoria Alexander · Built with Python & passion
+  </footer>
 </body>
 
 </html>
-
