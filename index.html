@@ -53,14 +53,35 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Project cards – dark mode */
+.project {
+  background: #0f1419;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+}
+
 .project-details {
-  color: #c9d1d9;
-  background-color: rgba(255, 255, 255, 0.05);
+  color: #e6edf3;                  /* ensure readable text */
+  background-color: rgba(255,255,255,0.06);
   border: 1px solid #30363d;
   border-radius: 10px;
   padding: 1rem;
   margin-top: 0.8rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* inherit color for any <p> inside the details */
+.project-details p { color: inherit; }
+
+/* optional: make the light pink project image stand out less against dark bg */
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.35);
 }
 
 .project img {
