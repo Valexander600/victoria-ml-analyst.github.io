@@ -27,6 +27,9 @@ It's designed to reflect both professionalism and creativity — giving hiring m
 - 📊 **Excel Sales Dashboard**  
   Built in Excel with pivot tables and formulas to deliver interactive business insights.
 
+- 📉 [Customer Churn Prediction](https://github.com/Valexander600/customer-churn-prediction)
+
+
 Each project includes a live GIF demo and links to the full code.
 
 ---
