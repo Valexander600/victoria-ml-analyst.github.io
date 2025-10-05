@@ -56,11 +56,12 @@ Each project includes a live GIF demo and links to the full code.
 
 ---
 
-## 📬 Contact Me
-
-- 📧 Email: valexander600@gmail.com  
-- 💼 LinkedIn: [victoria-ml-analyst](https://www.linkedin.com/in/victoria-ml-analyst/)
+📬 **Let’s Connect!**  
+💌 **Email:** [valexander600@gmail.com](mailto:valexander600@gmail.com)  
+💼 **LinkedIn:** [victoria-ml-analyst](https://linkedin.com/in/victoria-ml-analyst)  
+🌐 **Portfolio Website:** [valexander600.github.io/victoria-ml-analyst.github.io](https://valexander600.github.io/victoria-ml-analyst.github.io)
 
 ---
 
-### ✨ Thank you for visiting my portfolio!
+✨ *Thank you for visiting my portfolio — always learning, always growing!* 🚀
+
